@@ -1,32 +1,32 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_print_alphabet.c                                :+:      :+:    :+:   */
+/*   ft_print_numbers.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: marberge <marberge@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/11/04 18:49:21 by marberge          #+#    #+#             */
-/*   Updated: 2025/11/04 19:36:52 by marberge         ###   ########lyon.fr   */
+/*   Created: 2025/11/04 19:35:09 by marberge          #+#    #+#             */
+/*   Updated: 2025/11/04 19:43:06 by marberge         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
 void	ft_putchar(char c);
 
-void	ft_print_alphabet(void)
+void	ft_print_numbers(void)
 {
-	char	a;
+	char	i;
 
-	a = 'a';
-	while (a <= 'z')
+	i = 48;
+	while (i <= 57)
 	{
-		ft_putchar(a);
-		a++;
+		ft_putchar(i);
+		i++;
 	}
 }
 
 /*
 int	main(void)
 {
-	ft_print_alphabet();
+	ft_print_numbers();
 }
 */
