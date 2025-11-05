@@ -1,32 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putstr.c                                        :+:      :+:    :+:   */
+/*   ft_strlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: marberge <marberge@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/11/05 19:31:57 by marberge          #+#    #+#             */
-/*   Updated: 2025/11/05 19:43:36 by marberge         ###   ########lyon.fr   */
+/*   Created: 2025/11/05 19:40:51 by marberge          #+#    #+#             */
+/*   Updated: 2025/11/05 19:47:02 by marberge         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	ft_putchar(char c);
+// #include <stdio.h>
 
-void	ft_putstr(char *str)
+int	ft_strlen(char *str)
 {
 	int	i;
 
 	i = 0;
 	while (str[i])
-	{
-		ft_putchar(str[i]);
 		i++;
-	}
+	return (i);
 }
 
 /*
 int	main(void)
 {
-	ft_putstr("hello world");
+	printf("hello world = %d\n", ft_strlen("hello world"));
 }
 */
